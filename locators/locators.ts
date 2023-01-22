@@ -8,22 +8,39 @@ export default class LoginHeader {
     }
 
     public get headerLoginButton() {
-        return this.page.locator('//a[@id="LoginMenuItem"]')
+        const loginButton = this.page.locator('//a[@id="LoginMenuItem"]')
+        if (loginButton !== null) {
+            return loginButton
+        } else throw new Error("Login button not found.")
+        
     }
 
     public get headerLogoutButton() {
-        return this.page.locator('//a[@id="LogoutMenuItem"]')
+        const logoutButton = this.page.locator('//a[@id="LogoutMenuItem"]')
+        if (logoutButton !== null) {
+            return logoutButton
+        } else throw new Error("Logout button not found.")
     }
 
     public get headerGuestBookButton() {
+        const guestBookButton = this.page.locator('//a[@id="GuestbookMenuItem"]')
+        if (guestBookButton !== null) {
+            return guestBookButton
+        } else throw new Error("GuestBook button not found.")
         return this.page.locator('//a[@id="GuestbookMenuItem"]')
     }
 
     public get headerSignTheGuestBookButton() {
-        return this.page.locator('//a[@id="SignTheGuestbookMenuItem"]')
+        const signGuestBookButton = this.page.locator('//a[@id="SignTheGuestbookMenuItem"]')
+        if (signGuestBookButton !== null) {
+            return signGuestBookButton
+        } else throw new Error("Sign the GuestBook button not found.")
     }
 
     public get headerAboutButton() {
-        return this.page.locator('//a[@id="AboutMenuItem"]')
+        const aboutButton = this.page.locator('//a[@id="AboutMenuItem"]')
+        if (aboutButton !== null) {
+            return aboutButton
+        } else throw new Error("About button not found.")
     }
 }
