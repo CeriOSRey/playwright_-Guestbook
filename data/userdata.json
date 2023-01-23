@@ -8,5 +8,11 @@
         "password": "Demopass",
         "wrongUsername": "user",
         "wrongPassword": "pass"
+    },
+    "signTheGuestBookFormData": {
+        "name": "John Doe",
+        "email": "johndoe@email.com",
+        "comment": "two hundred and fifty characters two hundred and fifty characters two hundred and fifty characters two hundred and fifty characters two hundred and fifty characters two hundred and fifty characters two hundred and fifty characters two hundred and fifty characters"
+
     }
 }
