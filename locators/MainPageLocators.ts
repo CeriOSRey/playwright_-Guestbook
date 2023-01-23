@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test"
 
-export default class LoginHeader {
+export default class MainPageHeaderLocators {
     private page: Page
 
     constructor(page: Page) {
@@ -11,8 +11,7 @@ export default class LoginHeader {
         const loginButton = this.page.locator('//a[@id="LoginMenuItem"]')
         if (loginButton !== null) {
             return loginButton
-        } else throw new Error("Login button not found.")
-        
+        } else throw new Error("Login button not found.")       
     }
 
     public get headerLogoutButton() {
@@ -27,7 +26,6 @@ export default class LoginHeader {
         if (guestBookButton !== null) {
             return guestBookButton
         } else throw new Error("GuestBook button not found.")
-        return this.page.locator('//a[@id="GuestbookMenuItem"]')
     }
 
     public get headerSignTheGuestBookButton() {

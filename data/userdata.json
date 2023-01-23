@@ -1,0 +1,12 @@
+{
+    "homePageTitle": "Home - Guestbook Demo",
+    "loginPageTitle": "Login - Guestbook Demo",
+    "signTheGuestbookPageTitle": "Sign the Guestbook - Guestbook Demo",
+    "aboutPageTitle": "About - Guestbook Demo",
+    "credentials": {
+        "username": "Demouser",
+        "password": "Demopass",
+        "wrongUsername": "user",
+        "wrongPassword": "pass"
+    }
+}
