@@ -1,40 +1,35 @@
-import { expect, Page } from "@playwright/test"
-import MainPageHeaderLocators from "../locators/MainPageLocators"
+import { Page } from "@playwright/test"
+import MainPageHeaderLocator from "../locators/MainPageLocator"
 
 export default class MainHeaderActions {
-    private page: Page
+    private locator: MainPageHeaderLocator
 
-    constructor(page:Page) {
-        this.page = page
+    constructor(page: Page) {
+        this.locator = new MainPageHeaderLocator(page)
     }
 
     public async clickLogin() {
-        const locator = new MainPageHeaderLocators(this.page)
-        const button = locator.headerLoginButton
+        const button = this.locator.headerLoginButton
         await button.click()
     }
 
     public async clickLogout() {
-        const locator = new MainPageHeaderLocators(this.page)
-        const button = locator.headerLogoutButton
+        const button = this.locator.headerLogoutButton
         await button.click()
     }
 
     public async clickGuestBook() {
-        const locator = new MainPageHeaderLocators(this.page)
-        const button = locator.headerGuestBookButton
+        const button = this.locator.headerGuestBookButton
         await button.click()
     }
 
     public async clickSignTheGuestBook() {
-        const locator = new MainPageHeaderLocators(this.page)
-        const button = locator.headerSignTheGuestBookButton
+        const button = this.locator.headerSignTheGuestBookButton
         await button.click()
     }
 
     public async clickAbout() {
-        const locator = new MainPageHeaderLocators(this.page)
-        const button = locator.headerAboutButton
+        const button = this.locator.headerAboutButton
         await button.click()
     }
 
