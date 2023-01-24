@@ -1,8 +1,8 @@
 import test, { Browser, BrowserContext, chromium, expect, Page } from "@playwright/test";
-import MainHeaderActions from "../actions/MainPageheader.actions";
+import MainHeaderActions from "../actions/mainPageheader.actions";
 import * as userData from "../data/userdata.json";
 import {urls} from "../common/urls";
-import LoginPageActions from "../actions/LoginPage.action";
+import LoginPageActions from "../actions/loginPage.action";
 
 let browser: Browser
 let context: BrowserContext
@@ -49,5 +49,5 @@ test.describe("Testing Auth flow", () => {
         ])   
     })
 
-    
+
 })

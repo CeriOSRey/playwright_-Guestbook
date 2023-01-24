@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test"
-import MainPageHeaderLocator from "../locators/MainPageLocator"
+import MainPageHeaderLocator from "../locators/mainPageLocator"
 
 export default class MainHeaderActions {
     private locator: MainPageHeaderLocator

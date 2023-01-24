@@ -21,7 +21,7 @@ export default class SignTheGuestbookActions {
     }
 
     async fillCommentArea(comment:string) {
-        await this.locator.emailField.fill(comment)
+        await this.locator.commentTextArea.fill(comment)
     }
 
     async checkSubscribeBox() {
@@ -38,7 +38,8 @@ export default class SignTheGuestbookActions {
 
     async pickPlaywrightAutomationTool() {
         await this.locator.testToolDropDown.click()
-        await this.locator.playwrightOption.click()
+        await this.page.waitForTimeout(5000)
+        await this.locator.testToolDropDown.selectOption('Microsoft Playwright')
     }
 
     async clickSubmitButton() {

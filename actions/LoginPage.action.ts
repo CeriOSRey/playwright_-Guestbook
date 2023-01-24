@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
 import LoginPageLocator from "../locators/loginPageLocator";
 import * as userData from "../data/userdata.json"
-import MainPageHeaderLocator from "../locators/MainPageLocator";
+import MainPageHeaderLocator from "../locators/mainPageLocator";
 
 export default class LoginPageActions {
     public locator: LoginPageLocator

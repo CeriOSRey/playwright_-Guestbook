@@ -3,6 +3,7 @@
     "loginPageTitle": "Login - Guestbook Demo",
     "signTheGuestbookPageTitle": "Sign the Guestbook - Guestbook Demo",
     "aboutPageTitle": "About - Guestbook Demo",
+    "thankyouPageTitle": "Thank You - Guestbook Demo",
     "credentials": {
         "username": "Demouser",
         "password": "Demopass",
