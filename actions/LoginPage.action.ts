@@ -39,6 +39,11 @@ export default class LoginPageActions {
         await this.clickLoginButton()
     }
 
+    public async logoutUser() {
+        await this.headerLocator.headerLogoutButton.click()
+        await this.page.waitForTimeout(5000)
+    }
+
     public async enterWrongCredentials() {
         await this.clickHeaderLoginButton()
         await this.page.waitForTimeout(3000)
@@ -48,11 +53,11 @@ export default class LoginPageActions {
     }
 
     public async checkErrorMessage() {
-        return await this.locator.errorMessage.isVisible
+        return this.locator.errorMessage.isVisible
     }
 
     public async checkForLogoutButton() {
-        return await this.locator.usernameFromLogoutButton
+        return this.locator.usernameFromLogoutButton
     }
 
 }
